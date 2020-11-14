@@ -24,7 +24,7 @@ class particle
         push();
         translate(position.x,position.y);
         rotate(angle);
-        fill("white");
+        fill(this.color);
         ellipseMode(RADIUS);
         ellipse(0,0,10)
         pop();
