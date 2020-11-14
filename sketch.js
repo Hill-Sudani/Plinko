@@ -32,17 +32,17 @@ function setup()
 
   for(var m = 15; m<= width-10; m = m+50)
   {
-    plinkos.push(new plinko(l,75))
+    plinkos.push(new plinko(m,175))
   }
 
   for(var l = 40; l <= width; l = l+50)
   {
-    plinkos.push(new plinko(l,75))
+    plinkos.push(new plinko(l,275))
   }
 
   for(var m = 15; m<= width-10; m = m+50)
   {
-    plinkos.push(new plinko(l,75))
+    plinkos.push(new plinko(m,375))
   }
 }
 
@@ -58,17 +58,17 @@ function draw()
 
   Ground.display();
 
-  for(var a=0;a<particles.length;a=a++)
+  for(var a=0;a<particles.length;a++)
   {
-    particles[a].display()
+    particles[a].display();
   }
 
-  for(var b = 0;a<divisions.length;b=b++)
+  for(var b = 0;b<divisions.length;b++)
   {
     divisions[b].display();
   }
 
-  for(var c = 0;c<plinkos.length;c=c++)
+  for(var c = 0;c<plinkos.length;c++)
   {
     plinkos[c].display();
   }
